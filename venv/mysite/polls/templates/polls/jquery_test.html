@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script language="JavaScript">-->
+<!--        function check(num){-->
+<!--            if (num == 3)-->
+<!--                alert(myform.save_btn.name);-->
+<!--            else if (num == 4)-->
+<!--                alert(myform.del_btn.name);-->
+<!--        }-->
+<!--    </script>-->
+
+<!--      jquery 설정.-->
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+
+<!--    제이쿼리 <input접근방법-->
+<!--    $("#test_id").val();-->
+
+    <script type="text/javascript">
+               $(document).ready( function() {
+
+               $('#save_btn').click( function(){ alert( $("#save_btn").val() ) } );
+               $('#del_btn').click( function(){ alert( $("#del_btn").val() ) } );
+
+
+               });
+
+
+
+    </script>
+    <!--               $('#del_btn').click( function(){ alert(#del_btn) } );-->
+<!--  $('.btn_show').click(function(){-->
+<!--    $('.btn_word').show();-->
+<!--  });-->
+
+<!--               $('.content').click(function(){-->
+<!--               $('.content');-->
+<!--                });-->
+</head>
+<body>
+
+<form action="index.html"  method="get" name = "myform" >
+
+<input type ="id" name="uid" id = "uid" value="jin"><br>
+<input type ="password" name="upw" value="111"><br>
+<input type ="radio" name="subject" value="j">java
+<input type ="radio" name="subject" value="c">c<br>
+
+<input type ="checkbox" name="hobby" value="music">음악감상
+<input type ="checkbox" name="hobby" value="movie">영화감상
+<input type ="checkbox" name="hobby" value="book">독서<br>
+
+<input type ="file" name="ufile"><br>
+<input type ="hidden" name="uhidden" value="111111"><br>
+
+<textarea name="content"cols="40" lows="40"> 여긴 메일본문...</textarea><br>
+
+
+<input type ="reset" name="reset" value="리셋">
+<input type ="submit" name="전송">
+<br>
+
+<!-- jquery용 버튼 테스트 id:# class:. -->
+<input type ="button" id = "save_btn" value="저장">
+<input type ="button" id = "del_btn" value="삭제"><br>
+
+
+
+<select name="gen">
+    <option value="f">남</option>
+    <option value="m">여</option>
+</select>
+</form>
+
+</body>
+</html>

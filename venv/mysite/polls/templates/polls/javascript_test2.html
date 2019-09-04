@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<!--    자바스크립트로 input에 접근-->
+
+    <script language="JavaScript">
+        function check(num){
+            if (num == 3)
+                alert( document.getElementsByName("save_btn")[0].name );
+            else if (num == 4)
+                alert( document.getElementsByName("del_btn")[0].name );
+        }
+    </script>
+
+</head>
+<body>
+
+<form action="index.html"  method="get" name = "myform" >
+
+<input type ="id" name="uid" value="jin"><br>
+<input type ="password" name="upw" value="111"><br>
+<input type ="radio" name="subject" value="j">java
+<input type ="radio" name="subject" value="c">c<br>
+
+<input type ="checkbox" name="hobby" value="musci">음악감상
+<input type ="checkbox" name="hobby" value="movie">영화감상
+<input type ="checkbox" name="hobby" value="book">독서<br>
+
+<input type ="file" name="ufile"><br>
+<input type ="hidden" name="uhidden" value="111111"><br>
+
+<textarea name="content"cols="40" lows="40"> 여긴 메일본문...</textarea><br>
+
+
+<input type ="reset" name="reset" value="리셋">
+<input type ="submit" name="전송">
+<br>
+<input type ="button" onclick= "check(3)" name= "save_btn" value="저장">
+<input type ="button" onclick= "check(4)" name= "del_btn" value="삭제">
+
+
+<select name="gen">
+    <option value="f">남</option>
+    <option value="m">여</option>
+</select>
+
+</form>
+</body>
+</html>
