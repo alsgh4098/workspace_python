@@ -14,7 +14,7 @@
         <form action= "/polls/{{ KEY_QUESTION_LIST.id }}/{{ KEY_CHOICE_LIST.0.id }}/{{ KEY_CHOICE_LIST.0.cnt }}/vote/" method="post">{% csrf_token %}
             <ul>
             <li>
-                <input type="radio" name="choice_pk" id="{{ forloop.counter }}" value="{{ choice.id }}"> {{KEY_CHOICE_LIST.0.choice_text}}
+                <input type="radio" name="choice_pk" id="{{ KEY_CHOICE_LIST.0.id }}" value="{{ choice.id }}"> {{KEY_CHOICE_LIST.0.choice_text}}
             </li>
             </ul>
         <input type="submit" value="Vote">
@@ -24,7 +24,7 @@
         <form action= "/polls/{{ KEY_QUESTION_LIST.id }}/{{ KEY_CHOICE_LIST.1.id }}/{{ KEY_CHOICE_LIST.1.cnt }}/vote/" method="post">{% csrf_token %}
             <ul>
             <li>
-                <input type="radio" name="choice_pk" id="{{ forloop.counter }}" value="{{ choice.id }}"> {{KEY_CHOICE_LIST.1.choice_text}}
+                <input type="radio" name="choice_pk" id="{{ KEY_CHOICE_LIST.1.id }}" value="{{ choice.id }}"> {{KEY_CHOICE_LIST.1.choice_text}}
             </li>
             </ul>
         <input type="submit" value="Vote">
@@ -34,7 +34,7 @@
         <form action= "/polls/{{ KEY_QUESTION_LIST.id }}/{{ KEY_CHOICE_LIST.2.id }}/{{ KEY_CHOICE_LIST.2.cnt }}/vote/" method="post">{% csrf_token %}
             <ul>
             <li>
-                <input type="radio" name="choice_pk" id="{{ forloop.counter }}" value="{{ choice.id }}"> {{KEY_CHOICE_LIST.2.choice_text}}
+                <input type="radio" name="choice_pk" id="{{ KEY_CHOICE_LIST.2.id }}" value="{{ choice.id }}"> {{KEY_CHOICE_LIST.2.choice_text}}
             </li>
             </ul>
         <input type="submit" value="Vote">
