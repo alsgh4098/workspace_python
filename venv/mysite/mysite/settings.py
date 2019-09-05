@@ -77,9 +77,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'C:/kosa/workspace_python/venv/mysite/db.sqlite3',
     }
 }
+
+# os.path.join(BASE_DIR, 'db.sqlite3')
 
 
 # Password validation

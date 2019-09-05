@@ -11,7 +11,10 @@ index html.......<br>
 {% if KEY_QUESTION_LIST %}
     <ul>
     {% for question_dic in KEY_QUESTION_LIST %}
+
         <li><a href="/polls/{{ question_dic.id }}/detail/">{{ question_dic.question_text }}</a></li>
+
+
     {% endfor %}
     </ul>
 {% else %}
