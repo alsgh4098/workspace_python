@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog',
     'board',
     'polls',
     'django.contrib.admin',
@@ -81,6 +82,18 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+#오라클 데이터베이스 설정.
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.oracle',
+#         'NAME': '127.0.0.1/XE',                        # Or path to database file if using sqlite3.
+#         'USER': 'kosa',                 # Not used with sqlite3.
+#         'PASSWORD': '0000',     # Not used with sqlite3.
+#         # 'HOST': '',                          # Set to empty string for localhost. Not used with sqlite3.
+#         # 'PORT': '1521',                 # Set to empty string for default. Not used with sqlite3.
+#     }
+# }
 
 
 # Password validation
