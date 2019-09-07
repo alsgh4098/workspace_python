@@ -1,0 +1,30 @@
+{% load static %}
+<!--static 경로설정 : 부트스트랩을 위해서-->
+
+<html>
+    <head>
+        <title>Jin's blog</title>
+        <!--    head 는 문서 정보를 가지고 있지만, 웹 페이지에서 보이지 않는 정보들을 담는 영역입니다.-->
+        <!--    부트스트랩적용링크 설정.-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+    <!--body 란 웹 페이지에 직접적으로 보이는 내용이 들어갑니다.
+       웹 페이지의 내용은 모두 이 body태그안에 들어갑니다.-->
+        <div class="page-header">
+            <h1><a href="/">Jin's Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+<!--                    block content ~~ endblock 설정 후 사이공간을 다른 html파일(여기서는 blog_post_list에서)에서 불러와서 사용한다.-->
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

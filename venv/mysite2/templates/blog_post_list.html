@@ -1,0 +1,18 @@
+{% extends 'blog_base.html' %}
+
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                <p>published: {{ post.published_date }}</p>
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+
+<!--blog_base에 만들어놓은 템플릿 가져와서 사용.-->
