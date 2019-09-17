@@ -1,0 +1,2 @@
+예제
+https://edu.goorm.io/learn/lecture/202/바로-실행해보면서-배우는-파이썬/lesson/26675/클래스-init-이란

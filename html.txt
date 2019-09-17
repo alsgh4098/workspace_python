@@ -1,0 +1,11 @@
+<!DOCTYPE html>: 문서 형식을 나타냅니다.  HTML 초창기에 (1991~2년) doctype은 HTML 페이지가 자동 오류 검사나 다른 유용한 것이 가능한 좋은 HTML을 의미하는 연결고리처럼 작동하는 것을 뜻했습니다. 이런 형식으로 사용했습니다. 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+하지만 요즘에는 아무도 신경쓰지 않으며, 그저 모든 것이 제대로 작동하기 위해 포함되어야 하는 역사적 유물일 뿐입니다. <!DOCTYPE html> 은 유효한 문서 형식을 나타내는 짧은 문장이고, 이 것만 알고 있으면 됩니다.
+<html></html>: <html> 요소입니다. 이 요소는 전체 페이지의 콘텐츠를 포함하며, 기본 요소로도 알려져 있습니다.
+<head></head>: <head> 요소입니다. 이 요소는 홈페이지 이용자에게는 보이지 않지만 검색 결과에 노출 될 키워드, 홈페이지 설명, CSS 스타일, character setdeclaration 등 HTML 페이지의 모든 내용을 담고 있습니다. 자세한 내용은 다음 장에서 다룹니다.
+<meta charset="utf-8">: This element sets the character set your document should use to utf-8, which includes most characters from all known human languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.
+<title></title>: This sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favourite it.
+<body></body>: The <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.

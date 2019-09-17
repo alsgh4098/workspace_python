@@ -1,0 +1,6 @@
+beautiful soup : 파싱할때 사용.
+
+부트스트랩 적용 : 
+자바스크립트, 이미지, css파일은 static에
+
+html파일은 templates에
